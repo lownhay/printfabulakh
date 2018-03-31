@@ -13,12 +13,13 @@
 #ifndef FT_PRINTF_H
 #define FT_PRINTF_H
 
-# include "gnltry2/get_next_line.h"
+# include "gnltry2/libft/libft.h"
 # include <stdarg.h>
+# include <wchar.h>
 
 typedef struct	s_print
 {
-	int first[5];
+	int first[5];  // + # 0 ' ' -
 	int width[3];
 	int hhhllljz[6];
 }				f_print;
@@ -46,5 +47,7 @@ typedef struct	s_forouxX
 	uintmax_t j;
 	size_t z;
 }				f_forouxX;
+
+int ft_printf(const char *format, ...);
 
 #endif
